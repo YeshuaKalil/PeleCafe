@@ -13,12 +13,37 @@
     font-family: 'MinhaFonte', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+h1 {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #a5a396;
+    padding-bottom: 3px;
+}
+
 h2 {
     padding-bottom: 15px;
 }
 
 .cabecalho {
     background-color: rgb(32, 12, 4);
+}
+
+ul {
+    display:flex;
+    justify-content: center;
+    gap: 100px;
+    list-style: none;
+}
+
+li {
+    padding: 0px 5px 3px 3px;
+    margin-bottom: 5px;
+}
+
+li:hover {
+    background-color: rgb(94, 73, 65);
+    padding: 0px 5px 3px 3px;
+    margin-bottom: 5px;
 }
 
 .conteudo {
@@ -28,8 +53,8 @@ h2 {
 
 .produtos{
     display:flex;
-    align-content: center;
-    justify-content:space-around;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .rodape {

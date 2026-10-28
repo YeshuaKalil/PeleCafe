@@ -28,31 +28,31 @@
                 <h3>Cadastro</h3>
                 <!-- Nome de Usuário-->
                 <label for="name">Nome</label>
-                <input type="text" id="name" name="name" placeholder="Digite seu nome">
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
                 <br>
 
                 <!-- CEP-->
                 <label for="cep">CEP</label>
-                <input type="text"  id="cep" name="cep" placeholder="Digite seu CEP">
+                <input type="text"  id="cep" name="cep" placeholder="Digite seu CEP" required>
                 <br>
                 
                 <!-- Email-->
                 <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="Digite seu email">
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
                 <br><br>
 
                 <!-- Preferências de café-->
                 <p>Como prefere seu café?</p>
-                <input name="cafe" id="puro" type="radio" value="Puro">
+                <input name="cafe" id="puro" type="radio" value="Puro" required>
                 <label for="puro">Puro</label>
 
-                <input name="cafe" id="comLeite" type="radio" value="Com leite">
+                <input name="cafe" id="comLeite" type="radio" value="ComLeite" required>
                 <label for="comLeite">Com leite</label>
                 <br><br>
                 
 
                 <!-- Notificações -->
-                <input type="checkbox" id="gosto" value="Eu gosto de café">
+                <input type="checkbox" id="gosto" name="notificar">
                 <label for="gosto">Quero receber informações sobre ofertas no meu email.</label>
                 <br><br>
 

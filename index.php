@@ -2,7 +2,6 @@
     $cardapio = [
         ["nome"=>"Pelé Café", "preco"=>"84.00", "descricao"=>"O café do Rei", "imagem"=>"imagens/cafe.jpeg"],
         ["nome"=>"Café normal", "preco"=>"12.00", "descricao"=>"Apenas um café plebeu", "imagem"=>"imagens/cafe.jpeg"]
-
     ];
 ?>
 
@@ -34,26 +33,22 @@
         <section>
             <h1>O verdadeiro Café Pelé</h1>
         </section>
-        <section class>
-            <div class="produtos">
+        <section class="produtos">
             <?php
             foreach($cardapio as $item):
             ?>
-            <div class="produto">
-                <article>
-                    <img class="imgProduto" src=<?php echo($item['imagem']);?> alt=<?php echo($item['nome']);?> >
-                    <div class="descProduto">
-                        <h2><?php echo($item['nome']);?></h2>
-                        <p><strong>Preço:</strong> <?php echo($item['preco']);?></p>
-                        <p> <?php echo($item['descricao']);?></p>
-                        <a href="cadastro.php"><button type="button" class='button'>Comprar</button></a>
-                    </div>
-                </article>
-            </div>
+            <article class="produto">
+                <img class="imgProduto" src=<?php echo($item['imagem']);?> alt=<?php echo($item['nome']);?> >
+                <div class="descProduto">
+                    <h2><?php echo($item['nome']);?></h2>
+                    <p><strong>Preço:</strong> <?php echo($item['preco']);?></p>
+                    <p> <?php echo($item['descricao']);?></p>
+                    <a href="cadastro.php"><button type="button" class='button'>Comprar</button></a>
+                </div>
+            </article>
             <?php
                 endforeach;
             ?>
-            </div>
         </section>
         
     </main>
